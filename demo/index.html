@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <a href="http://www.google.com" class="product-link" data-track-type="event" data-event-category="Product" data-event-action="Click" data-event-label="Google">This is a test!</a>
+  <a href="http://www.google.com" target="_blank" class="product-link" data-track-type="event" data-event-category="Product" data-event-action="Click" data-event-label="Google">This is a test!</a>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,9 +24,9 @@
     ga('send', 'pageview');
 
   </script>
-  <script src="../jquery.analytics.js"></script>
+  <script src="../jquery.track.js"></script>
   <script>
-    $(".product-link").track();
+    $(".product-link").track({engine:'tagmanager'});
   </script>
 </body>
 </html>

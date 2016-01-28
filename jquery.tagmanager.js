@@ -14,10 +14,10 @@ $.fn.track = function(settings){
   this.click(function(){
     switch(type){
       case  "page":
-        ga('send', 'pageview', $(this).attr("data-page-url"));
+        dataLayer.push('event':'pageView', 'pagePath':$(this).attr("data-page-url"));
         break;
       case "event":
-        ga('send', 'event', $(this).attr("data-event-category"), $(this).attr("data-event-action"), $(this).attr("data-event-label"));
+        dataLayer.push('event':'pageEvent', 'eventCategory':$(this).attr("data-event-category"), 'eventAction':$(this).attr("data-event-action"), 'eventLabel': $(this).attr("data-event-label"));
         break;
     }
   });
