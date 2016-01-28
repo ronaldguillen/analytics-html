@@ -3,7 +3,7 @@
 * such code as contained in the End User License Agreement accompanying
 * this product.
 *
-* @author "Ronald Guillen"
+* @authors "Ronald Guillen, Hansy Schmitt"
 * @copyright "Copyright (C) 2015 Spark. All Rights Reserved."
 * @license "Apache License"
 * @version "1.0"
