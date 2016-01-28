@@ -18,8 +18,8 @@ $.fn.track = function(options){
   var settings = (options != undefined) ? options : defaults;
   var type = this.attr("data-track-type");
 
-  // Attach click event handle for current element.
-  this.click(function(){
+  // Attach click event handler for current element.
+  this.on('click', function(){
     switch(type){
       case "page":
         trackPage($(this).attr("data-page-url"));
